@@ -14,17 +14,17 @@ d ={
     '学号':[1,2,3]
 }
 
- d = pd.DataFrame ( d )
+d = pd.DataFrame ( d )
 
- number =12345
+number =12345
 
 def page_1():
     '''我的兴趣推荐'''
     st.write (": orange ［我： sunglasses ：班的： sunglasses ：男娃： sunglasses ：娃都很帅： sunglasses :]")
     st.image ("111.png")
-    with open ('霞光．mp3', 'rb') as f :
-        mymp3= f.read ()
-    st.audio (mymp3, format =' audio /mp3', start_time =0)
+    #with open ('霞光．mp3', 'rb') as f :
+	#mymp3= f.read ()
+    #st.audio (mymp3, format =' audio /mp3', start_time =0)
 
 def page_2():
     '''我的图片处理工具'''
@@ -41,10 +41,10 @@ def page_4():
 
  
 if page == '我的兴趣推荐':
-    pass
+    page_1()
 if page == '我的图片处理工具':
-    pass
+    page_2()
 if page == '我的智能词典':
-    pass
+    page_3()
 if page == '我的留言区':
-    pass
+    page_4()
